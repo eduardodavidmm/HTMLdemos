@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+        <title>Navigation One Demo</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                        LOGO
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Maiores sunt, praesentium fugiat quis nostrum quibusdam error in quo iure similique numquam, 
+                sint aperiam odio aut. Delectus, necessitatibus accusamus! Sunt, sapiente. Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Quae, ad illum similique neque quidem ullam corporis 
+                perspiciatis, voluptas dolorum reiciendis quibusdam omnis? Assumenda culpa obcaecati soluta 
+                odit sit, fugit hic!</p>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Maiores sunt, praesentium fugiat quis nostrum quibusdam error in quo iure similique numquam, 
+                sint aperiam odio aut. Delectus, necessitatibus accusamus! Sunt, sapiente.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Maiores sunt, praesentium fugiat quis nostrum quibusdam error in quo iure similique numquam, 
+                sint aperiam odio aut. Delectus, necessitatibus accusamus! Sunt, sapiente.</p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+        //Menu Toggle Button
+        
+        $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            })
+        })
+
+        //Scrolling Effect
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+        </script>
+        
+    </body>
+</html>
