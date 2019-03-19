@@ -1,0 +1,77 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(Background.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    display: table;
+}
+
+.signIn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Arimo', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input {
+    display: block;
+    width: 320px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: 'Arimo', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+input:focus{
+    background-color: #fff;
+}
+
+button {
+    font-family: 'Arimo', sans-serif;
+    width: 332px;
+    height: 50px;
+    font-size: 16px;
+    background: #C32222;
+    font-weight: lighter;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+}
