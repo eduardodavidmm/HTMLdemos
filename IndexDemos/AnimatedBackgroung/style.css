@@ -1,0 +1,91 @@
+body{
+    animation: anim 15s infinite;
+}
+
+.data{
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 20px;
+    width: 60%;
+    text-align: justify;
+    margin: 150px auto;
+    color: #fff;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 2px 2px;
+}
+
+footer{
+    margin: 0;
+    left: 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+@keyframes anim {
+    0% {
+        background: #71B280;
+    }
+    20% {
+        background: #B5AC49;
+    }
+    40% {
+        background: #45B649;
+    }
+    60% {
+        background: #727a17;
+    }
+    80% {
+        background: #1f4037;
+    }
+    100% {
+        background: #06beb6;
+    }
+}
+
+/* 
+
+Gradients
+
+@keyframes anim {
+    0% {
+        background: #dd3e54/
+        background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  
+        background: linear-gradient(to right, #6be585, #dd3e54); 
+    }
+    20% {
+        background: #00F260;
+        background: -webkit-linear-gradient(to right, #0575E6, #00F260);  
+        background: linear-gradient(to right, #0575E6, #00F260); 
+
+    }
+    40% {
+        background: #11998e;
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+        background: linear-gradient(to right, #38ef7d, #11998e);          
+    }
+    60% {
+        background: #a8ff78;
+        background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  
+        background: linear-gradient(to right, #78ffd6, #a8ff78); 
+    }
+    80% {
+        background: #52c234;
+        background: -webkit-linear-gradient(to right, #061700, #52c234);  
+        background: linear-gradient(to right, #061700, #52c234); 
+    }
+    100% {
+        background: #000000;         
+        background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  
+        background: linear-gradient(to right, #0f9b0f, #000000); 
+    }
+}
+*/
