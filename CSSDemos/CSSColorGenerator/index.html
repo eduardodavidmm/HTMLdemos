@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random ColorCode Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>CSS Random ColorCode Generator</h1>
+        <div class="container">
+            <h2 id="color">#E63C44</h2>
+            <button id="change" type="button">New Color</button>
+        </div>
+        <footer>by David Maldonado</footer>
+
+        <script>
+            var btn = document.getElementById('change')
+            var text = document.getElementById('color');
+
+            var generator = function() {
+                newColor = '#' +
+                (Math.random()*0xFFFFFF<<0).toString(16);
+                console.log(newColor.length);
+                if(newColor.length < 7) {
+                    generator();
+                }
+            }
+
+            btn.addEventListener('click', function() {
+                generator();
+
+                document.body.style.background = newColor;
+                btn.style.color = newColor;
+                text.innerText = newColor;
+            })
+        </script>
+    </body>
+</html>
